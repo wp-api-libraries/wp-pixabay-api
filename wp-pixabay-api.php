@@ -69,6 +69,17 @@ if ( ! class_exists( 'PixabayAPI' ) ) {
 		}
 
 		/**
+		* Checks the Rate Limit.
+		*/
+		private function check_rate_limit() {
+
+			$ratelimit = wp_remote_retrieve_header( $this->response, 'X-RateLimit-Limit' );
+			$ratelimit_remaining = wp_remote_retrieve_header( $this->response, 'X-RateLimit-Remaining' );
+			$ratelimit_reset = wp_remote_retrieve_header( $this->response, 'X-RateLimit-Reset' );
+
+		}
+
+		/**
 		 * search_images function.
 		 *
 		 * @access public
