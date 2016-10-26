@@ -5,6 +5,17 @@
  * @package WP-Pixabay-API
  */
 
+/*
+* Plugin Name: WP PixaBay API
+* Plugin URI: https://github.com/wp-api-libraries/wp-pixabay-api
+* Description: Perform API requests to Pixabay in WordPress.
+* Author: WP API Libraries
+* Version: 1.0.0
+* Author URI: https://wp-api-libraries.com
+* GitHub Plugin URI: https://github.com/wp-api-libraries/wp-pixabay-api
+* GitHub Branch: master
+*/
+
 /* Exit if accessed directly */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
